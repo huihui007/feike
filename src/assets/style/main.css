@@ -1,0 +1,7 @@
+.relative{position: relative}
+.absolute{position: absolute;}
+/*样式重置*/
+#login .login_input .weui-cells{background-color: transparent!important;}
+#Login .weui-cell__hd{background-color: transparent;}
+#Login .weui-tab__panel{padding-bottom: 0px;}
+.card_box{border:1px solid #ccc;width: 86%;padding: 10px;border-radius: 5px;;margin:10px auto;}

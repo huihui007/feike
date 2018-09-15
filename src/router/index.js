@@ -29,10 +29,40 @@ const router = new VueRouter({
           meta: {title: '个人信息'}
         },
         {
+          path: 'personal/healthInfo',
+          name: 'healthInfo',
+          component: resolve => require(['../components/personal/healthInfo.vue'], resolve),
+          meta: {title: '身体健康信息'}
+        },
+        {
           path: 'personal/childenInfo',
           name: 'childenInfo',
           component: resolve => require(['../components/personal/childenInfo.vue'], resolve),
           meta: {title: '孩子个人信息'}
+        },
+        {
+          path: 'personal/setting',
+          name: 'setting',
+          component: resolve => require(['../components/personal/setting.vue'], resolve),
+          meta: {title: '设置'}
+        },
+        {
+          path: 'personal/bindChilden',
+          name: 'bindChilden',
+          component: resolve => require(['../components/personal/bindChilden.vue'], resolve),
+          meta: {title: '绑定宝宝'}
+        },
+        {
+          path: 'personal/course',
+          name: 'course',
+          component: resolve => require(['../components/course/course.vue'], resolve),
+          meta: {title: '課程'}
+        },
+        {
+          path: 'personal/courseInfo',
+          name: 'course',
+          component: resolve => require(['../components/course/courseInfo.vue'], resolve),
+          meta: {title: '课程详情'}
         },
       ]
     },

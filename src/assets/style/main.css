@@ -1,7 +1,25 @@
+a{color: #666;}
 .relative{position: relative}
 .absolute{position: absolute;}
-/*样式重置*/
+.db{display: inline-block}
+.hidden{overflow: hidden;}
+.fl{float: left;}
+.fr{float: right;}
+.mT10{margin-top:10px;}
+.textCenter{text-align: center;}
+.top10{top:10px;}
+/*样式vux重置*/
 #login .login_input .weui-cells{background-color: transparent!important;}
 #Login .weui-cell__hd{background-color: transparent;}
 #Login .weui-tab__panel{padding-bottom: 0px;}
 .card_box{border:1px solid #ccc;width: 86%;padding: 10px;border-radius: 5px;;margin:10px auto;}
+.user_header{width: 60px;height: 60px;border-radius: 50%;vertical-align: middle;border: 2px solid #333;}
+.user_header_r{width: 60px;height: 60px;border-radius: 5px;vertical-align: middle;border:1px solid #d4d3d3;}
+/*设置*/
+.line_heigth{line-height: 60px;}
+.weui-btn.save_btn{border-radius: 35px;}
+/*课程详情*/
+#courseInfo .weui-cell{padding: 0px;}
+/*个人健康信息*/
+#healthInfo .weui-cells{border: 0;padding: 10px 0px;text-align: left;}
+#healthInfo .weui-cells:before{border: 0;}

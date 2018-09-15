@@ -1,7 +1,6 @@
 <template>
     <div id="UserInfo">
       <swiper loop auto :list="demo06_list" :index="demo06_index" @on-index-change="demo06_onIndexChange"></swiper>
-
       <grid>
         <grid-item :label="('Go to Cell')">
           <img slot="icon" src="static/home/grid_icon.png">

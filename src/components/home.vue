@@ -5,6 +5,13 @@
         <router-link to="/init/personal/childenInfo">
           <img src="../assets/user.png" class="user_childen" alt="">
         </router-link>
+        <div class="num_fen">
+          <p>73</p>
+          <p>体制分数</p>
+        </div>
+        <router-link to="/init/personal/setting">
+          <i class="icon ">设置图标</i>
+        </router-link>
       </div>
       <v-chart :data="data">
         <v-scale x type="timeCat" mask="MM/DD" :tick-count="3" />
@@ -19,12 +26,14 @@
       <tab-item v-for="n in 8" :key="n" :selected="n===1"  @on-item-click="onItemClick">08/2{{ n }}</tab-item>
     </tab>
     <div v-for="info in infos" class="card_box">
-      <card :header="{title: info.name}">
-        <div slot="content" >
-          请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
-          建议增加蔬菜、水果的比例。
-        </div>
-      </card>
+      <router-link to="/init/personal/healthInfo">
+        <card :header="{title: info.name}">
+          <div slot="content" >
+            请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
+            建议增加蔬菜、水果的比例。
+          </div>
+        </card>
+      </router-link>
     </div>
 
   </div>
@@ -95,10 +104,10 @@
     font-size: 18px;
   }
   #UserInfo .center img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 4px solid #ececec;
   }
-  .user_childen{height: 100px;width: 100px;border-radius: 50%;}
+  .user_childen{height: 60px;width: 60px;border-radius: 50%;}
 </style>

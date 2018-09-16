@@ -2,27 +2,25 @@
   <div id="Home">
     <div class="center relative">
       <div class="absolute chart_header">
-        <router-link to="/init/personal/childenInfo">
+        <router-link to="/init/personal/childenInfo" class="fl">
           <img src="../assets/user.png" class="user_childen" alt="">
         </router-link>
-        <div class="num_fen">
-          <p>73</p>
+        <router-link to="/init/personal/setting" class="fr">
+          <i class="icon icon_setting"></i>
+        </router-link>
+        <div class="num_fen fr">
+          <p class="big_size">73</p>
           <p>体制分数</p>
         </div>
-        <router-link to="/init/personal/setting">
-          <i class="icon ">设置图标</i>
-        </router-link>
       </div>
-      <v-chart :data="data">
+      <v-chart :data="data" class="home_chart">
         <v-scale x type="timeCat" mask="MM/DD" :tick-count="3" />
-        <v-scale y :min="0" alias="日均温度" :tick-count="5" />
-        <v-point
-          :style="{stroke: '#fff',lineWidth: 1}"
-          shape="smooth" />
-        <v-line shape="smooth" />
+        <v-scale y :min="0" alias="体测分数" :tick-count="5" color="#fff" lineStyle="{color:'#fff}" />
+        <v-point :style="{stroke: '#fff',lineWidth: 1}" shape="smooth" colors="#fff" />
+        <v-line shape="smooth" colors="#fff"/>
       </v-chart>
     </div>
-    <tab custom-bar-width="60px">
+    <tab custom-bar-width="60px" class="home_custom shadow">
       <tab-item v-for="n in 8" :key="n" :selected="n===1"  @on-item-click="onItemClick">08/2{{ n }}</tab-item>
     </tab>
     <div v-for="info in infos" class="card_box">
@@ -35,10 +33,8 @@
         </card>
       </router-link>
     </div>
-
   </div>
 </template>
-
 <script>
   import { Group, Cell,  Blur,VChart, VLine, VPoint, VScale, VTooltip } from 'vux'
   import { Tab, TabItem, Sticky, Divider, XButton, Swiper, SwiperItem } from 'vux'
@@ -64,7 +60,6 @@
     },
     data () {
       return {
-        url: 'https://o3e85j0cv.qnssl.com/tulips-1083572__340.jpg',
         data:[
           { time: '2016-08-08 00:00:00', tem: 10 },
           { time: '2016-08-08 00:10:00', tem: 22 },
@@ -97,17 +92,20 @@
 <style lang="less" scoped>
   @import '~vux/src/styles/1px.less';
   @import '~vux/src/styles/center.less';
-  #UserInfo .center {
+  #Home .home_chart{background: url("../assets/beijing@2x.png") center 0 no-repeat;background-size: cover; margin: 0px auto;border-radius: 5px;}
+  #Home .center {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 20px 0px 20px;
     color: #fff;
     font-size: 18px;
   }
+  #Home .chart_header{width: 84%;}
   #UserInfo .center img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 4px solid #ececec;
   }
-  .user_childen{height: 60px;width: 60px;border-radius: 50%;}
+  .user_childen{height: 60px;width: 60px;border-radius: 50%;margin:10px}
+  .num_fen p.big_size{font-size: 3rem;line-height: 2.4rem;margin-top:15px;}
 </style>

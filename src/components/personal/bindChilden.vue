@@ -12,7 +12,7 @@
       @on-cancel="onCancel"
       @on-submit="onSubmit"
       ref="search"></search>
-    <div id="childen_info_conternt">
+    <div id="childen_info_conternt" class="shadow">
       <group>
         <cell>
           <span slot="title">宝宝的头像</span>
@@ -40,6 +40,7 @@
         </cell>
       </group>
     </div>
+    <x-button type="primary" class="save_btn bg_b mT20">确认绑定</x-button>
   </div>
 </template>
 
@@ -69,7 +70,7 @@
       onSubmit () {
         this.$refs.search.setBlur()
         this.$vux.toast.show({
-          type: 'text',
+          type: '请输入宝宝的唯一ID',
           position: 'top',
           text: 'on submit'
         })
@@ -84,12 +85,13 @@
     data () {
       return {
         results: [],
-        value: 'test'
+        value: '请输入宝宝的唯一ID'
       }
     }
   }
 </script>
 
 <style scoped>
-
+  #childen_info{padding: 0 15px 15px 15px;}
+#childen_info_conternt{border-radius: 5px;}
 </style>

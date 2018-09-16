@@ -64,6 +64,24 @@ const router = new VueRouter({
           component: resolve => require(['../components/course/courseInfo.vue'], resolve),
           meta: {title: '课程详情'}
         },
+        {
+          path: 'personal/teacher',
+          name: 'teacher',
+          component: resolve => require(['../components/teacher.vue'], resolve),
+          meta: {title: '教师'}
+        },
+        {
+          path: 'personal/studentList',
+          name: 'studentList',
+          component: resolve => require(['../components/studentList.vue'], resolve),
+          meta: {title: '学生列表'}
+        },
+        {
+          path: 'personal/testting',
+          name: 'testting',
+          component: resolve => require(['../components/testting.vue'], resolve),
+          meta: {title: '运动能力测评'}
+        },
       ]
     },
     {
@@ -71,7 +89,13 @@ const router = new VueRouter({
       name: 'login',
       component: resolve => require(['../components/login.vue'], resolve),
       meta: {title: '登录'}
-    }
+    },
+    {
+      path: '/userage',
+      name: 'userage',
+      component: resolve => require(['../components/userage.vue'], resolve),
+      meta: {title: '用户协议'}
+    },
   ]
 })
 

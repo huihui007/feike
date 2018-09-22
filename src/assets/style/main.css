@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font: inherit;
-  font-size: 14px;
+  font-size: 14px!important;
   vertical-align: baseline;
   list-style: none;
 }
@@ -28,6 +28,7 @@ textCenter{text-align: center}
 .top10{top:10px;}
 .w100{width: 100%;}
 /*样式vux重置*/
+div.weui-tab__panel{ padding-bottom: 0px !important;}
 div.vux-header{background-color: #fff;}
 div.vux-header .vux-header-title{color: #000;}
 div.vux-header .vux-header-left .left-arrow:before{content: "";position: absolute;width: 12px;height: 12px;border: 1px solid #000;border-width: 1px 0 0 1px;-webkit-transform: rotate(315deg);transform: rotate(315deg);top: 8px;left: 7px;}
@@ -38,7 +39,11 @@ form.weui-search-bar__form:after{border-radius:40px;}
 form.weui-search-bar__form{background-color: #fff;}
 div.weui-search-bar.weui-search-bar_focusing .weui-search-bar__cancel-btn{display: none;}
 div.weui-search-bar__box .weui-search-bar__input{color: #666;}
+div.weui-tabbar{bottom:-1px;}
 /*通用样式*/
+html , body{
+  height:100%;
+}
 .font_r{color: #FB0012;}
 .font_b{color: #77A9F3;}
 .shadow{box-shadow:0 2px 12px 0 rgba(0,0,0,.1);border-radius: 8px;border: 1px solid #ebeef5}
@@ -53,7 +58,8 @@ div.weui-search-bar__box .weui-search-bar__input{color: #666;}
 .tex_3{font-size: .6rem;}
 .color_p{color: #ff3366}
 .bg_b{background-color: #0092fe;}
-.rrelative_30{position: relative;top:-30px;}
+.relative_30{position: relative;top:-30px;}
+.pading_15_content{padding: 15px;margin-bottom: 40px;}
 /*------------------------------------------------------------------------*/
 /*登录按钮样式*/
 button.btn_f{background: #fff;color: #77A9F3}
@@ -69,14 +75,14 @@ button.btn_f:after{border: none;}
 #login .weui-input{color: #fff;}
 #Login .weui-cell__hd{background-color: transparent;}
 #Login .weui-cell__bd input.weui-tab__panel{padding-bottom: 0px;}
-.card_box{box-shadow:0 2px 12px 0 rgba(0,0,0,.1);border-radius: 8px;border: 1px solid #ebeef5;width: 86%;padding: 10px;border-radius: 5px;;margin:10px auto;}
+.card_box{box-shadow:0 2px 12px 0 rgba(0,0,0,.1);border-radius: 8px;border: 1px solid #ebeef5;padding: 10px;border-radius: 5px;margin:0 auto;}
 .user_header{width: 60px;height: 60px;border-radius: 50%;vertical-align: middle;border: 2px solid #333;}
 .user_header_r{width: 60px;height: 60px;border-radius: 5px;vertical-align: middle;border:1px solid #d4d3d3;}
 /*主页*/
 .home_chart .noselect{width: 100%!important;border-radius: 5px;margin-top:48px;}
 .icon{width: 30px;height: 30px;display: inline-block;background-position: center center;background-repeat: no-repeat;background-size: cover;vertical-align: middle;position: relative;}
 .icon_setting{background-image: url("../icon_setting.png");margin: 20px 0 0 10px;}
-.home_custom{paddging:6px 5px 3px;margin-top:10px;margin-left: 5px;}
+.home_custom{paddging:6px 5px 3px;margin-top:10px;margin-left: 5px; margin-right:5px;}
 .home_custom .vux-tab{border-radius: 6px;}
 div.weui-panel:before {border-top:0px solid #e5e5e5}
 div.weui-panel__hd{color: #000;font-weight: 800;font-size: 1.1rem;padding: 5px 15px 5px;}
@@ -95,9 +101,9 @@ div.weui-panel:after{border:0;}
 #healthInfo .weui-cell:before{left: 0}
 div.weui-cells:before{border: 0;}
 div.weui-cells:after{border: 0;}
-.pin_fen_box .weui-panel{color: #fff;background: url("../../assets/health_bg_2.png")}
+.pin_fen_box{border-radius: 10px;background: url("../../assets/health_bg_2.png"); background-size: cover;}
+.pin_fen_box .weui-panel{color: #fff;background-color: transparent;border: 0;}
 #healthInfo .vux-card-content{margin: 0px;}
-#healthInfo .weui-panel{position: initial}
 /*教师*/
 label.weui-search-bar__label{border-radius: 13px;}
 #teacher div.weui-cell_access,#student_list div.weui-cell_access{box-shadow:0 2px 12px 0 rgba(0,0,0,.1);border-radius: 8px;border: 1px solid #ebeef5;margin-bottom: 10px;}
@@ -106,3 +112,7 @@ label.weui-search-bar__label{border-radius: 13px;}
 .class_list .weui-media-box{padding: 10px;margin-top: 10px;box-shadow:0 2px 12px 0 rgba(0,0,0,.1);border-radius: 8px;border: 1px solid #ebeef5;}
 .class_list .weui-media-box_appmsg .weui-media-box__thumb{border-radius: 50%}
 .class_list .weui-media-box_text .weui-media-box__title{color: #000;}
+
+#childen_info_conternt .weui-cells{margin-top:0px;}
+/*视频播放*/
+#testVideo .media_list{color: red}

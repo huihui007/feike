@@ -5,7 +5,7 @@
         @on-change="getResult"
         :results="results"
         v-model="value"
-        position="absolute"
+        position="static"
         auto-scroll-to-top
         top="46px"
         @on-focus="onFocus"
@@ -69,5 +69,7 @@
 </script>
 
 <style scoped>
-
+  .vux-search-box{
+    position: static !important;
+  }
 </style>

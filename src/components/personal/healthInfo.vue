@@ -18,73 +18,76 @@
           </flexbox-item>
         </flexbox>
       </div>
-      <div  class="healthInfo_content relative">
-        <card class="card_box mT10">
-          <div slot="header" class="hidden">
-            <span class="fl">运动能力评估</span>
-          </div>
-          <div slot="content" class="card-padding hidden textCenter">
-            <group>
-              <cell title="体态（正面观）" is-link>
-                <span class="blue_a">高水平</span>
-              </cell>
-              <cell title="体态（侧面观）" is-link>
-                <span class="blue_a">高水平</span>
-              </cell>
-              <cell title="跑步" is-link>
-                <span class="blue_a">高水平</span>
-              </cell>
-            </group>
+      <div class="pading_15_content">
+        <div  class="healthInfo_content relative">
+          <card class="card_box mT10">
+            <div slot="header" class="healthInfo_title hidden">
+              <span class="title fl">运动能力评估 <sub>10项</sub></span>
+            </div>
+            <div slot="content" class="card-padding hidden textCenter">
+              <group>
+                <cell title="体态（正面观）" is-link>
+                  <span class="blue_a">高水平</span>
+                </cell>
+                <cell title="体态（侧面观）" is-link>
+                  <span class="blue_a">高水平</span>
+                </cell>
+                <cell title="跑步" is-link>
+                  <span class="blue_a">高水平</span>
+                </cell>
+              </group>
 
-          </div>
-        </card>
-      </div>
-      <div class="swiper_content shadow rrelative_30">
-        <swiper>
-          <swiper-item class="qu_bg"><img src="../../assets/qu_bg_1.png" alt=""></swiper-item>
-          <swiper-item class="qu_bg"><img src="../../assets/qu_bg_1.png" alt=""></swiper-item>
-          <swiper-item class="qu_bg"><img src="../../assets/qu_bg_1.png" alt=""></swiper-item>
-        </swiper>
-      </div>
-      <div class="pin_fen_box">
-        <card class="card_box mT10">
+            </div>
+          </card>
+        </div>
+        <div class="swiper_content shadow relative_30 mT10">
+          <swiper>
+            <swiper-item class="qu_bg"><img src="../../assets/qu_bg_1.png" alt=""></swiper-item>
+            <swiper-item class="qu_bg"><img src="../../assets/qu_bg_1.png" alt=""></swiper-item>
+            <swiper-item class="qu_bg"><img src="../../assets/qu_bg_1.png" alt=""></swiper-item>
+          </swiper>
+        </div>
+        <div class="pin_fen_box relative_30 mT10">
+          <card class="card_box">
+            <div slot="header" class="hidden">
+              <span class="fl">转发分享</span>
+              <span class="fr">时长：02:30</span>
+            </div>
+            <div slot="content">
+              <p>请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
+                建议增加蔬菜、水果的比例。</p>
+            </div>
+          </card>
+        </div>
+        <card class="card_box mT10 relative_30 mT10">
           <div slot="header" class="hidden">
-            <span class="fl">转发分享</span>
-            <span class="fr">时长：02:30</span>
+            <span class="fl"><span class="border_s border_l_b"></span>推荐视频</span>
           </div>
-          <div slot="content">
-            <p>请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
-              建议增加蔬菜、水果的比例。</p>
+          <div slot="content" class="card-padding">
+            <div class="list">
+              <router-link to="/init/personal/courseInfo">
+                <card class="top10">
+                  <div slot="header" class="hidden">
+                    <span class="fl weight800">飞盘游戏练习</span>
+                  </div>
+                  <div slot="content" class="hidden course_box">
+                    <div class="course_video relative">
+                      <img src="../../assets/course.png" alt="">
+                      <img src="../../assets/play_btn.png" alt="" class="absolute play_btn">
+                      <span class="absolute db video_time">02:30</span>
+                    </div>
+                  </div>
+                  <div slot="footer">
+                    <p>适合月龄：2-3岁</p>
+                    <p>目标：提高儿童跑跳与敏捷能力</p>
+                  </div>
+                </card>
+              </router-link>
+            </div>
           </div>
         </card>
       </div>
-      <card class="card_box mT10">
-        <div slot="header" class="hidden">
-          <span class="fl"><span class="border_s border_l_b"></span>推荐视频</span>
-        </div>
-        <div slot="content" class="card-padding hidden">
-          <div class="list">
-            <router-link to="/init/personal/courseInfo">
-              <card class="top10">
-              <div slot="header" class="hidden">
-                <span class="fl weight800">飞盘游戏练习</span>
-              </div>
-              <div slot="content" class="hidden course_box">
-                <div class="course_video relative">
-                  <img src="../../assets/course.png" alt="">
-                  <img src="../../assets/play_btn.png" alt="" class="absolute play_btn">
-                  <span class="absolute db video_time">02:30</span>
-                </div>
-              </div>
-              <div slot="footer">
-                <p>适合月龄：2-3岁</p>
-                <p>目标：提高儿童跑跳与敏捷能力</p>
-              </div>
-            </card>
-            </router-link>
-          </div>
-        </div>
-      </card>
+
     </div>
 </template>
 
@@ -115,14 +118,36 @@
 </script>
 
 <style scoped>
+
+  .healthInfo_title{
+    padding-bottom:10px;
+  }
+  .healthInfo_title sub{
+    font-size: 12px;
+    vertical-align: bottom;
+  }
+  .healthInfo_title .title{
+    padding-left:10px;
+    position: relative;
+  }
+  .healthInfo_title .title:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    border-left: solid 0.12rem #0F8FFF;
+  }
+
   .healthInfo_top{width: 100%;height: 250px;background: url("../../assets/healthInfo_top_bg.png") center 0 no-repeat;background-size: cover;-webkit-background-size:cover}
-  .healthInfo_content{top: -30px;}
+  .healthInfo_content{top: -45px;}
   .healthInfo_top_content{margin-top: 30px;padding: 20px;}
   .healthInfo_top_l{color: #fff;font-size:.6rem}
   .healthInfo_top_l .healthInfo_top_title{font-size: 1.4rem;font-weight: 500;}
   .healthInfo_top_r{width: 110px;}
   .healthInfo_top_r img{width: 100%;height: 100%;}
-  .swiper_content{width: 90%;margin: 0 auto}
+  .swiper_content{margin: 0 auto}
   .qu_bg img{width: 100%;height: auto;}
   .course_video{height: 190px;border:1px solid #ccc;width: 100%;}
   .course_video img{height: 100%;width: 100%;}

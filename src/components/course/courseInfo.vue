@@ -1,73 +1,75 @@
 <template>
     <div id="courseInfo">
       <div id="testVideo"></div>
-      <card class="card_box mT10">
-        <div slot="header" class="hidden">
-          <span class="fl">转发分享</span>
-          <span class="fr">时长：02:30</span>
-        </div>
-        <div slot="content">
-          <div class="media_list weui-media-box weui-media-box_appmsg">
-            <div class="weui-media-box__hd">适合年龄:</div>
-            <div class="weui-media-box__bd">
-              <p class="weui-media-box__desc">2-3岁</p>
+      <div class="pading_15_content">
+        <card class="card_box mT10">
+          <div slot="header" class="hidden">
+            <span class="fl">转发分享</span>
+            <span class="fr">时长：02:30</span>
+          </div>
+          <div slot="content">
+            <div class="media_list weui-media-box weui-media-box_appmsg">
+              <div class="weui-media-box__hd">适合年龄:</div>
+              <div class="weui-media-box__bd">
+                <p class="weui-media-box__desc">2-3岁</p>
+              </div>
+            </div>
+            <div class="media_list weui-media-box weui-media-box_appmsg">
+              <div class="weui-media-box__hd">目&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标:</div>
+              <div class="weui-media-box__bd">
+                <p class="weui-media-box__desc">文字描述文字描述文字描述文字描述文字描述</p>
+              </div>
+            </div>
+            <div class="media_list weui-media-box weui-media-box_appmsg">
+              <div class="weui-media-box__hd">适合年龄:</div>
+              <div class="weui-media-box__bd">
+                <p class="weui-media-box__desc">2-3岁</p>
+              </div>
+            </div>
+            <div class="media_list weui-media-box weui-media-box_appmsg">
+              <div class="weui-media-box__hd">道&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具:</div>
+              <div class="weui-media-box__bd">
+                <p class="weui-media-box__desc">跳绳</p>
+              </div>
+            </div>
+            <div class="media_list weui-media-box weui-media-box_appmsg">
+              <div class="weui-media-box__hd">次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数:</div>
+              <div class="weui-media-box__bd">
+                <p class="weui-media-box__desc">跑步</p>
+                <p class="weui-media-box__desc">跳绳</p>
+              </div>
             </div>
           </div>
-          <div class="media_list weui-media-box weui-media-box_appmsg">
-            <div class="weui-media-box__hd">目标:</div>
-            <div class="weui-media-box__bd">
-              <p class="weui-media-box__desc">文字描述文字描述文字描述文字描述文字描述</p>
-            </div>
+        </card>
+        <card class="card_box mT10">
+          <div slot="header" class="hidden">
+            <span class="fl">课程简介</span>
           </div>
-          <div class="media_list weui-media-box weui-media-box_appmsg">
-            <div class="weui-media-box__hd">适合年龄:</div>
-            <div class="weui-media-box__bd">
-              <p class="weui-media-box__desc">2-3岁</p>
-            </div>
+          <div slot="content">
+            请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
+            建议增加蔬菜、水果的比例。
           </div>
-          <div class="media_list weui-media-box weui-media-box_appmsg">
-            <div class="weui-media-box__hd">道具:</div>
-            <div class="weui-media-box__bd">
-              <p class="weui-media-box__desc">跳绳</p>
-            </div>
+        </card>
+        <card class="card_box mT10">
+          <div slot="header" class="hidden">
+            <span class="fl">课程简介</span>
           </div>
-          <div class="media_list weui-media-box weui-media-box_appmsg">
-            <div class="weui-media-box__hd">次数:</div>
-            <div class="weui-media-box__bd">
-              <p class="weui-media-box__desc">跑步</p>
-              <p class="weui-media-box__desc">跳绳</p>
-            </div>
+          <div slot="content">
+            请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
+            建议增加蔬菜、水果的比例。
           </div>
-        </div>
-      </card>
+        </card>
+        <card class="card_box mT10">
+          <div slot="header" class="hidden">
+            <span class="fl">课程简介</span>
+          </div>
+          <div slot="content">
+            请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
+            建议增加蔬菜、水果的比例。
+          </div>
+        </card>
+      </div>
 
-      <card class="card_box mT10">
-        <div slot="header" class="hidden">
-          <span class="fl">课程简介</span>
-        </div>
-        <div slot="content">
-          请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
-          建议增加蔬菜、水果的比例。
-        </div>
-      </card>
-      <card class="card_box mT10">
-        <div slot="header" class="hidden">
-          <span class="fl">课程简介</span>
-        </div>
-        <div slot="content">
-          请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
-          建议增加蔬菜、水果的比例。
-        </div>
-      </card>
-      <card class="card_box mT10">
-        <div slot="header" class="hidden">
-          <span class="fl">课程简介</span>
-        </div>
-        <div slot="content">
-          请注意膳食均衡，在控制热量的前提下减少脂肪的摄入量，
-          建议增加蔬菜、水果的比例。
-        </div>
-      </card>
     </div>
 </template>
 <script>
@@ -136,8 +138,8 @@
 <style scoped>
   @import './../../assets/style/Dvideo.css';
   @import './../../assets/style/style.css';
-  .media_list.weui-media-box_appmsg{padding: 0px;text-align: left}
-  .media_list.weui-media-box_appmsg .weui-media-box__hd{text-align: left;width: auto;height: auto;line-height: inherit}
+  .media_list.weui-media-box_appmsg{padding: 0px;text-align: left;min-height: 1.5rem;font-weight: 400;line-height: 1.5rem;}
+  .media_list.weui-media-box_appmsg .weui-media-box__hd{text-align: left;width: 80px;height: auto;line-height: inherit;}
   .media_list .media_list{margin-top:10px;}
   .media_list .weui-media-box__desc{text-overflow: inherit;-webkit-box-orient:inherit;}
   .media_list.weui-media-box:before{border: 0px;}

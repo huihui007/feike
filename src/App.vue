@@ -28,9 +28,9 @@
     },
     methods: {
       windowHeight(){
-        var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
-        var bodyHeight = document.getElementById("app"); //寻找ID为content的对象
-        bodyHeight.style.height = (h) + "px"; //你想要自适应高度的对象
+        //var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
+        //var bodyHeight = document.getElementById("app"); //寻找ID为content的对象
+        //bodyHeight.style.height = (h) + "px"; //你想要自适应高度的对象
       }
     }
   }

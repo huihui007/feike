@@ -1,6 +1,6 @@
 <template>
   <div id="Init">
-    <top class="top"></top>
+    <!--<top class="top"></top>-->
     <transition>
       <router-view></router-view>
     </transition>

@@ -24,14 +24,31 @@
       })
     },
     mounted(){
-      this.windowHeight();
+      this.fun(document, window);
+      this.windowHeight()
     },
     methods: {
+      fun :function (doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+
+            //这里是假设在640px宽度设计稿的情况下，1rem = 20px；
+            //可以根据实际需要修改
+            docEl.style.fontSize = 20 * (clientWidth / 750) + 'px';
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      },
       windowHeight(){
-        //var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
-        //var bodyHeight = document.getElementById("app"); //寻找ID为content的对象
-        //bodyHeight.style.height = (h) + "px"; //你想要自适应高度的对象
+        var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
+        var bodyHeight = document.getElementById("app"); //寻找ID为content的对象
+        bodyHeight.style.height = (h) + "px"; //你想要自适应高度的对象
       }
+
     }
   }
 </script>

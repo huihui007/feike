@@ -6,14 +6,16 @@
       :results="results"
       v-model="value"
       position="absolute"
-      auto-scroll-to-top
-      top="46px"
+      :auto-fixed='false'
+      top="0px"
       @on-focus="onFocus"
+      @on-blur="fuwei"
       @on-cancel="onCancel"
       @on-submit="onSubmit"
       ref="search"></search>
     <div id="childen_info_conternt" class="shadow">
       <group>
+
         <cell>
           <span slot="title">宝宝的头像</span>
           <span slot="value"><img class="user_header_r" src="../../assets/user.png" alt=""></span>
@@ -65,7 +67,10 @@
       },
       getResult (val) {
         console.log('on-change', val)
-        this.results = val ? getResult(this.value) : []
+        // this.results = val ? getResult(this.value) : []
+      },
+      fuwei(){
+        console.log(456)
       },
       onSubmit () {
         this.$refs.search.setBlur()

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import './assets/style/main.css'
 import Vuex from 'vuex'
 import FastClick from 'fastclick'
-import {WechatPlugin, AjaxPlugin, LoadingPlugin, ToastPlugin, AlertPlugin,ViewBox } from 'vux'
+import {WechatPlugin, AjaxPlugin, LoadingPlugin, ToastPlugin, AlertPlugin,ViewBox ,Confirm } from 'vux'
 import { XImg } from 'vux'
 import router from './router'
 import App from './App'
@@ -15,6 +15,7 @@ Vue.use(AjaxPlugin)
 Vue.use(LoadingPlugin)
 Vue.use(ToastPlugin)
 Vue.use(AlertPlugin)
+Vue.use(Confirm)
 Vue.component('view-box', ViewBox)
 Vue.component('x-img', XImg)
 /**

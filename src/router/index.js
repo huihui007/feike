@@ -53,6 +53,36 @@ const router = new VueRouter({
           meta: {title: '绑定宝宝'}
         },
         {
+          path: 'personal/DNA',
+          name: 'DNA',
+          component: resolve => require(['../components/personal/DNA.vue'], resolve),
+          meta: {title: 'DNA检测'}
+        },
+        {
+          path: 'personal/BMI',
+          name: 'BMI',
+          component: resolve => require(['../components/personal/BMI.vue'], resolve),
+          meta: {title: 'BMI检测'}
+        },
+        {
+          path: 'personal/bodyTok',
+          name: 'bodyTok',
+          component: resolve => require(['../components/personal/bodyTok.vue'], resolve),
+          meta: {title: '身体成分'}
+        },
+        {
+          path: 'personal/BMIFirst',
+          name: 'BMIFirst',
+          component: resolve => require(['../components/personal/BMIFirst.vue'], resolve),
+          meta: {title: '肥胖分析'}
+        },
+        {
+          path: 'personal/changeUserInfo',
+          name: 'changeUserInfo',
+          component: resolve => require(['../components/personal/changeUserInfo.vue'], resolve),
+          meta: {title: '修改用户信息'}
+        },
+        {
           path: 'personal/course',
           name: 'course',
           component: resolve => require(['../components/course/course.vue'], resolve),

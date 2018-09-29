@@ -1,24 +1,26 @@
 <template>
     <div id="student_list">
-      <div class="student_list_top textCenter">大一班</div>
+      <div class="student_list_top textCenter mT20 clean">大一班<span class="icon icon_add_f fr"></span></div>
       <div class="class_box">
         <div class="class_list">
           <ul class="weui-panel__bd">
             <li class="student_list textLeft weui-media-box weui-media-box_text">
-              <router-link to="/init/personal/testting">
+
                 <div class="weui-media-box_appmsg">
-                  <div class="weui-media-box__hd">
-                    <img src="http://placeholder.qiniudn.com/60x60/3cc51f/ffffff" alt="" class="weui-media-box__thumb">
-                  </div>
-                  <div class="weui-media-box__bd">
-                    <h4 class="weui-media-box__title">
-                      多多 <span>男</span><span>10岁</span>
-                    </h4>
-                    <p class="weui-media-box__desc">id:1234567</p>
-                  </div>
+                  <router-link to="/init/personal/changeUserInfo">
+                    <div class="weui-media-box__hd">
+                      <img src="../assets/user.png" alt="" class="weui-media-box__thumb">
+                    </div>
+                  </router-link>
+                  <router-link to="/init/personal/testting" class="weui-media-box__bd">
+                    <p class="title_1">
+                      多多 <span class="tex_2">男 10岁</span>
+                    </p>
+                    <p class="blue_a">id:1234567</p>
+                  </router-link>
                 </div>
-              </router-link>
             </li>
+
           </ul>
         </div>
       </div>
@@ -58,6 +60,7 @@
 
 <style scoped>
   #student_list{padding:0 15px;}
-  .student_list_top{height: 40px;line-height: 40px;color: #fff;font-size: 1rem;background-color: #0F8FFF;border-radius: 8px;}
-  .weui-media-box__bd{background: url("../assets/link.png") center right no-repeat;}
+  .student_list_top{font-size:1.7rem;height: 40px;line-height: 40px;color: #fff;border-radius: 8px;background: url("../assets/top_img_studentLIst.png") center no-repeat;background-size: cover;}
+  .weui-media-box__bd{background: url("../assets/link.png") center right no-repeat;background-size: 10px;}
+  .icon_add_f{background-image: url("../assets/icon_add_f.png");top:10px;right: 20px;width: 1.7rem;height: 1.7rem;}
 </style>

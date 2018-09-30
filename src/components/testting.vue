@@ -2,16 +2,18 @@
     <div id="testting">
       <div class="healthInfo_top hidden">
         <flexbox class="healthInfo_top_content" :gutter="0">
-          <flexbox-item :span="1/2">
+          <flexbox-item :span="3/10">
             <div class="healthInfo_top_l">
+              <p class="healthInfo_top_title">
+                SPS
+              </p>
               <p class="healthInfo_top_txt">
-                SPS <br>
                 儿童运动能力<br>
                 评估测试
               </p>
             </div>
           </flexbox-item>
-          <flexbox-item :span="1/2">
+          <flexbox-item :span="7/10">
             <div class="healthInfo_top_r"><img src="../assets/top_img.png" alt=""></div>
           </flexbox-item>
         </flexbox>
@@ -73,8 +75,8 @@
 <style scoped>
   .healthInfo_top{width: 100%;height: 250px;background: url("../assets/healthInfo_top_bg.png") center 0 no-repeat;background-size: cover;-webkit-background-size:cover}
   .healthInfo_top_content{margin-top: 30px;padding: 20px;}
-  .healthInfo_top_l{color: #fff;font-size:.6rem}
-  .healthInfo_top_r{width: 110px;}
+  .healthInfo_top_l{color: #fff;font-size:1.6rem}
+  .healthInfo_top_r{width: 14rem;}
   .healthInfo_top_r img{width: 100%;height: 100%;}
   .healthInfo_content{top: -30px;}
   .healthInfo_content .textCenter img{width: 100%;height: 100%;}

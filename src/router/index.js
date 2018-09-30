@@ -83,6 +83,12 @@ const router = new VueRouter({
           meta: {title: '修改用户信息'}
         },
         {
+          path: 'personal/addUser',
+          name: 'addUser',
+          component: resolve => require(['../components/personal/addUser.vue'], resolve),
+          meta: {title: '添加学生信息'}
+        },
+        {
           path: 'personal/course',
           name: 'course',
           component: resolve => require(['../components/course/course.vue'], resolve),

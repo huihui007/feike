@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="class_box">
-        <group class="class_list">
+        <group class="class_list mT20">
           <cell is-link link="/init/personal/studentList"><span slot="title">小一班</span></cell>
         </group>
       </div>

@@ -1,6 +1,10 @@
 <template>
     <div id="student_list">
-      <div class="student_list_top textCenter mT20 clean">大一班<span class="icon icon_add_f fr"></span></div>
+      <div class="student_list_top textCenter mT20 clean">大一班
+        <router-link to="/init/personal/addUser">
+          <span class="icon icon_add_f fr"></span>
+        </router-link>
+        </div>
       <div class="class_box">
         <div class="class_list">
           <ul class="weui-panel__bd">

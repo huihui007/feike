@@ -138,3 +138,12 @@ label.weui-search-bar__label{text-align: left}
 #childen_info_conternt .weui-cells{margin-top:0px;border-radius: 10px;}
 /*视频播放*/
 #testVideo .media_list{color: red}
+/*学生信息修改*/
+#changeUserInfo .weui-cell_access .weui-cell__ft:after{display: none;}
+#changeUserInfo .weui-cell_access .weui-cell__ft{padding-right: 0px;}
+#changeUserInfo .el-upload--picture-card{width: 3rem;height: 3rem;line-height: 3.3rem;}
+#changeUserInfo label.vux-label{font-size: 1.7rem;}
+#changeUserInfo .el-upload-list--picture-card .el-upload-list__item{width: 3rem;height: 3rem;line-height: 3.3rem;}
+#changeUserInfo .el-upload-list--picture-card{position: absolute;right: 7px;}
+#testting .vux-flexbox .vux-flexbox-item:first-child{margin-top:-36px!important;margin-right: -20px;margin-left: 20px;}
+#testting .healthInfo_top_content{padding-left: 50px;}

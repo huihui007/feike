@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1bb9dfe-90ab-4321-b35c-484c5f9d2e4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/top_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/top_img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/personal/changeUserInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/personal/changeUserInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/studentList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/studentList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/teacher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/teacher.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testting.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/testting.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -95,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -104,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -395,12 +383,12 @@
       <workItem from="1538145953431" duration="1746000" />
       <workItem from="1538195823656" duration="1479000" />
       <workItem from="1538198457222" duration="45452000" />
-      <workItem from="1538274711371" duration="11667000" />
+      <workItem from="1538274711371" duration="11820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158302000" />
+    <option name="totallyTimeSpent" value="158455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -842,7 +830,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -871,7 +859,7 @@
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
